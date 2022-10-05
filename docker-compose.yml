@@ -1,0 +1,11 @@
+version: '3'
+services:
+  reverseproxy-nginx:
+    build:
+      context: .
+      dockerfile: DockerFile.dev
+    ports:
+    - "8080:80"
+
+
+

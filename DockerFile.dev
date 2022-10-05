@@ -1,0 +1,10 @@
+FROM nginx
+
+WORKDIR /home/node/proxy
+
+#delete configurations
+RUN rm /etc/nginx/conf.d/*
+
+COPY /nginx-reverse-proxy/nginx.conf /etc/nginx/conf.d/
+
+
